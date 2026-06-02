@@ -1,3 +1,9 @@
+/**
+ * Simulador de Plantio de Soja - Agrinho 2026
+ * Desenvolvido por: wellington
+ * Tema: Equilíbrio entre Produção e Meio Ambiente
+ */
+
 // Variáveis do Estado do Jogo
 let dia = 1;
 const totalDias = 5;
