@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Agro Sustentável - Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Simulador de Plantio de Soja</h1>
+            <p>Tema: Equilíbrio entre Produção e Meio Ambiente</p>
+        </header>
+
+        <section class="status-panel">
+            <div class="status-card">
+                <h3>Dia</h3>
+                <p id="dia-atual">1/5</p>
+            </div>
+            <div class="status-card">
+                <h3>Status da Planta</h3>
+                <p id="fase-planta">Semente</p>
+            </div>
+            <div class="status-card">
+                <h3>Produção (Sacas)</h3>
+                <p id="産量-soja">0</p>
+            </div>
+        </section>
+
+        <section class="bars-section">
+            <div class="bar-container">
+                <label>💧 Umidade do Solo:</label>
+                <div class="progress-bar"><div id="barra-agua" class="progress-fill agua" style="width: 50%;"></div></div>
+            </div>
+            <div class="bar-container">
+                <label>🌱 Nutrientes do Solo:</label>
+                <div class="progress-bar"><div id="barra-nutrientes" class="progress-fill nutrientes" style="width: 60%;"></div></div>
+            </div>
+            <div class="bar-container">
+                <label>🌍 Sustentabilidade Ambiental:</label>
+                <div class="progress-bar"><div id="barra-sustentabilidade" class="progress-fill sustentabilidade" style="width: 100%;"></div></div>
+            </div>
+        </section>
+
+        <section class="campo-visual">
+            <div id="campo-soja" class="fase-semente"></div>
+        </section>
+
+        <section class="acoes-panel">
+            <button onclick="irrigar()" id="btn-irrigar">💧 Irrigação Inteligente</button>
+            <button onclick="adubarQuimico()" id="btn-quimico">🧪 Adubo Químico (Rápido)</button>
+            <button onclick="adubarOrganico()" id="btn-organico">🍃 Adubo Orgânico (Sustentável)</button>
+            <button onclick="proximoDia()" id="btn-proximo" class="btn-avancar">Avançar Dia ➡️</button>
+        </section>
+
+        <div id="mensagem-alerta" class="alerta"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
